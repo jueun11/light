@@ -17,20 +17,20 @@
 
     #root {
       width: 100vw;
-      height: 155vh;
+      height: 150vh;
       display: flex;
       justify-content: center;
     }
     header {
       width: 100vw;
       height: 5vh;
-      border-bottom: 1px solid var(--color-1);
-      background-color: #fff;
+      border: 1px solid red;
       position: fixed;
       top: 0;
       display: flex;
       justify-content: center;
       z-index: 2;
+
     }
     header > nav {
       width: 90vw;
@@ -47,7 +47,7 @@
     header > nav > ul {
       width: 60vw;
       height: 5vh;
-      /* border: 1px solid blue; */
+      border: 1px solid blue;
       display: flex;
       justify-content: space-between;
       overflow: hidden;
@@ -82,8 +82,7 @@
     footer {
       width: 100vw;
       height: 7vh;
-      border-top: 1px solid var(--color-1);
-      background-color: #fff;
+      border: 1px solid black;
       position: fixed;
       bottom: 0;
       display: flex;
@@ -100,85 +99,11 @@
       color:white;
       cursor: pointer;
     }
-/* 여기서부터 수정하면서 만들기 */
+
     main {
       width: 90vw;
-      /* border: 1px solid black; */
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      border: 1px solid black;
     }
-    article {
-      width: 90vw;
-      height: 75vh;
-      background-color:var(--color-3);
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      flex-direction: column;
-    }
-    article > ul {
-      width: 15vh;
-      height: 4vh;
-      /* border: 1px solid red; */
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.5vh;
-    }
-    article > ul > li {
-      width: 2.5vh;
-      height: 2.5vh;
-      border-radius: 50%;
-      background-color:var(--color-4);
-      overflow: hidden;
-    }
-
-    article > ul > li:hover{
-      background-color:var(--color-5);
-      transition: 0.5s;
-      cursor:pointer;
-    }
-    article > div {
-      width: 90vw;
-      height: 7vh;
-      background-color: var(--color-5);
-    }
-    section {
-      width: 90vw;
-      height: 75vh;
-      /* border: 1px solid red; */
-    }
-    section > p {
-      color: var(--color-2);
-      overflow: hidden;
-    }
-    p {
-        width: 90vw;
-        height: 7vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    p::after {
-        content: "";
-        flex-grow: 1;
-        /* margin: 0vw 3vw; */
-        background-color:var(--color-2);
-        height: 1px;
-        margin-left: 3vw;
-      }
-      .grid {
-        width: 90vw;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-      }
-      .grid > div {
-        height: 20vh;
-        background-color: var(--color-3);
-      }
   </style>
 </head>
 <body>
@@ -196,28 +121,7 @@
     </header>
 
 
-    <main>
-      <article>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div></div>
-      </article>
-      <section>
-          <p>오늘의 추천</p>
-          <div class="grid">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-      </section>
-    </main>
+    <main></main>
 
 
 
