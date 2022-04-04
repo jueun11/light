@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {padding:0; margin: 0; box-sizing: border-box;
+      overflow-x: hidden;
+    }
+    #root {
+      width: 100vw;
+      height: 200vh;
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: center;
+    }
+    header {
+      width: 90vw;
+      height: 5vh;
+      /* border: 1px solid red; */
+      position: fixed;
+      top: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+    }
+    header > div:nth-child(1) {
+      width: 5vh;
+      height: 5vh;
+      background-color: gray;
+    }
+    header > div:nth-child(1):hover {
+      cursor: pointer;
+      background-color: brown;
+    }
+    header > div:nth-child(2) {
+      width: 20vh;
+      height: 5vh;
+      /* border: 1px solid red; */
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+    } 
+    header > div:nth-child(2) >div {
+      width: 5vh;
+      height: 5vh;
+      background-color: gray;
+    }
+    header > div:nth-child(2) >div:hover {
+      cursor: pointer;
+      background-color: brown;
+    }
+
+    footer {
+      width: 90vw;
+      height: 5vh;
+      /* border: 1px solid red; */
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+    footer > div {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+    }
+    footer > div > div {
+      height: 5vh;
+      background-color: gray;
+      border-radius: 5px;
+    }
+    footer > div >div:nth-child(1) {
+      width: 10vw;
+      height: 5vh;
+    }
+    footer > div > div:nth-child(2) {
+      width: 75vw;
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    footer > div > div:nth-child(2) > p{
+      color: white;
+    }
+    footer > div >div:nth-child(1):hover {
+      background-color: brown;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    footer > div > div:nth-child(2):hover {
+      transition: 0.5s;
+      background-color: brown;
+      cursor: pointer;
+    }
+
+
+
+    main {
+      width: 90vw;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+    }
+    main > div:nth-child(1) {
+      height: 60vh;
+      background-color: #c4c4c4;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    #bar {
+      width: 15vh;
+      height: 4vh;
+      /* border: 1px solid red; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5vh;
+    }
+    #bar > div {
+      width: 2.5vh;
+      height: 2.5vh;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    #bar > div:hover {
+      background-color: gray;
+      transition: 0.5s;
+      cursor:pointer;
+    }
+    #bar > div:visited {
+      background-color: gray;
+    }
+
+    /* 텍스트 */
+    main > div:nth-child(2) {
+      height: 40vh;
+      /* border: 1px solid red; */
+      display: flex;
+      overflow: hidden;
+    }
+
+    #left {
+      /* border: 1px solid yellow; */
+      width: 90vw;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #left > div:nth-child(1) {
+      height: 22vh;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    #left > div:nth-child(2) {
+      height: 15vh;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #color {
+      width: 30vh;
+      height: 7vh;
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #color > div {
+      width: 5vh;
+      height: 5vh;
+      background-color: #c4c4c4;
+    }
+    #color > div:hover {
+      cursor: pointer;
+      border: 3px solid gray;
+    }
+
+
+    #right {
+      width: 10vw;
+      height: 40vh;
+      /* border: 1px solid blue; */
+      display: flex;
+      justify-content: flex-end;
+    }
+    #right > div {
+      margin-top: 2vh;
+      width: 5vh;
+      height: 5vh;
+      background-color: #c4c4c4;
+    }
+    #right > div:hover {
+      background-color: gray;
+      cursor: pointer;
+    }
+
+
+
+
+
+    main > div:nth-child(3) {
+      height: 2.5vh;
+      border-bottom: 1px solid #c4c4c4;
+      margin-bottom: 2.5vh;
+    }
+    main > div:nth-child(4) {
+      height: 75vh;
+      background-color: #c4c4c4;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <div></div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div id="bar">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <!-- 텍스트 -->
+      <div>
+        <div id="left">
+          <div>
+            <h1>lorem Ipsum</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus nobis tenetur. Hic, consequatur numquam ipsa obcaecati dignissimos aperiam est?</p>
+          </div>
+          <div>
+            <h2>lorem Ipsum</h2>
+            <div id="color">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div></div>
+        </div>
+      </div>
+
+
+      <div></div>
+      <div></div>
+      <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, earum accusamus asperiores voluptatibus id voluptatum sequi inventore quam laborum veritatis adipisci eum accusantium ducimus dignissimos in animi voluptates voluptate maxime necessitatibus placeat. Explicabo, eos iusto velit sapiente vitae est ipsa id natus magnam dolor atque veniam aliquam deleniti maiores odio.</div>
+    </main>
+    <footer>
+      <div>
+        <div></div>
+        <div>
+          <p>buy</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
