@@ -91,7 +91,12 @@ footer > div:hover {
   background-color: var(--color-5);
   color:white;
   cursor: pointer;
+  /* stroke: #fff; */
 }
+footer > div > svg:hover {
+  stroke: #fff;
+}
+
 /* 여기서부터 수정하면서 만들기 */
 main {
   width: 90vw;

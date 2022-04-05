@@ -54,9 +54,9 @@ header > nav {
   justify-content: ;
 }
 header > nav > div:nth-child(1) {
-  width: 4vh;
-  height: 4vh;
-  background-color: var(--color-1);
+  width: 3vh;
+  height: 3vh;
+  /* background-color: var(--color-1); */
   /* 화살표 */
 }
 header > nav > div:nth-child(2) {
@@ -80,14 +80,24 @@ footer {
 footer > div {
   /* border: 1px solid red; */
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* 아이콘 하나씩 넣어주기 */
+footer > div > img {
+  height: 50%;
 
+}
 footer > div:hover {
   /* background-color: var(--color-5); */
   background-color: var(--color-5);
   color:white;
   cursor: pointer;
+}
+footer > div > img:hover {
+  color: #fff;
+  stroke: #fff;
 }
 
 main {
@@ -191,6 +201,7 @@ section > div:nth-child(2) >div:nth-child(2) {
   
 }
 section > div:nth-child(2) >div:nth-child(2) > div {
+  
   background-color: var(--color-5);
   border-radius: 5px;
   display: flex;
@@ -199,8 +210,13 @@ section > div:nth-child(2) >div:nth-child(2) > div {
   padding: 3vw;
   overflow: hidden;
   color: #fff;
+  border: 3px solid var(--color-5);
 }
 
+section > div:nth-child(2) >div:nth-child(2) > div:hover {
+  /* box-sizing: border-box; */
+  border: 3px solid var(--color-4);
+}
 
 
 main > div:nth-child(3) {
@@ -277,4 +293,8 @@ main > div:nth-child(5) {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+}
+
+main > div:nth-child(5):hover {
+  border: 3px solid var(--color-4);
 }

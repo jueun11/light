@@ -2,6 +2,8 @@
 <!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-<rect x="47.48" y="337.72" transform="matrix(0.7071 0.7071 -0.7071 0.7071 319.9286 -53.2584)" width="353.55" height="43.67"/>
-<rect x="47.48" y="118.6" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 482.1306 81.1773)" width="353.55" height="43.67"/>
+<style type="text/css">
+	.st0{fill:none;stroke:#142126;stroke-width:25;stroke-miterlimit:10;}
+</style>
+<polyline class="st0" points="373.64,487 136.64,250 373.64,13 "/>
 </svg>
