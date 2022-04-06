@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/template 78.css">
+  <style>
+    nav > div:nth-child(3) {
+      width: inherit;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    nav >div:nth-child(3) > div:nth-child(1) {
+      width: 3vh;
+      height: 3vh;
+      background-color: #c4c4c4;
+    }
+    #root {
+  width: 100vw;
+  height: 145vh;
+  display: flex;
+  justify-content: center;
+}
+    main {
+      width: 90vw;
+      border: 1px solid black;
+    }
+
+    #profile {
+      /* height: 50vh; */
+      border: 1px solid red;
+      display: flex;
+      margin-top: 10vh;
+      /* 위에 가려지는거땜에 상하비율 안맞음 */
+    }
+
+    #profile > div:nth-child(1) {
+      width: 3vh;
+      height: 3vh;
+      background-color: #c4c4c4;
+    }
+    #profile > div:nth-child(2) {
+      width: 50vw;
+      height: 40vh;
+      border: 1px solid blue;
+      /* position: absolute; */
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <nav>
+        <div>
+          <img src="css/image/arrow.svg" alt="">
+        </div>
+        <div>내 정보</div>
+        <div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+      <div id="profile">
+        <div></div>
+        <div></div>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+
+
+
+
+
+
+
+    <footer>
+      <div>
+        <img src="css/image/home.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/play.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/category.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/heart.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/my page.svg" alt="">
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
