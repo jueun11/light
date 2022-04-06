@@ -57,7 +57,7 @@ header > nav > div:nth-child(2) {
   font-weight: bold;
   margin-left: 3vw;
   font-size: 1rem;
-  width: 20vw;
+  width: 40vw;
   /* 주문상세정보텍스트 */
 }
 
@@ -104,3 +104,18 @@ footer > div > img:hover {
   overflow: hidden;
   justify-content: space-between;
 }
+h1 {
+  font-size: 1rem;
+  color: var(--color-2);
+  font-weight: bold;
+}
+h2 {
+  font-size: 1rem;
+  color: var(--color-2);
+}
+
+p {
+  color: var(--color-2);
+  font-size: 0.8 rem;
+}
+#addr

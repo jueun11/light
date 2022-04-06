@@ -5,49 +5,177 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/template 78.css">
+  <link rel="stylesheet" href="css/template.css">
   <style>
+    nav >div:nth-child(1) {
+      align-items: center;
+    }
     nav > div:nth-child(3) {
-      width: inherit;
+      width: 90vw;
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
     }
     nav >div:nth-child(3) > div:nth-child(1) {
-      width: 3vh;
-      height: 3vh;
-      background-color: #c4c4c4;
+      width: 4vh;
+      height: 4vh;
+      /* background-color: var(--color-1); */
     }
     #root {
-  width: 100vw;
-  height: 145vh;
-  display: flex;
-  justify-content: center;
-}
+    width: 100vw;
+    /* height: 130vh; */
+    display: flex;
+    justify-content: center;
+  }
     main {
       width: 90vw;
-      border: 1px solid black;
+      /* border: 1px solid black; */
     }
 
     #profile {
       /* height: 50vh; */
-      border: 1px solid red;
+      /* border: 1px solid red; */
       display: flex;
-      margin-top: 10vh;
+      margin-top: 8vh;
+      display: flex;
+      flex-direction: column;
+      background-image: url("css/image/line-01.svg");
+      background-size:cover;
+      background-position: 5vw 40%;
+      /* background-position: 20px -50px; */
       /* 위에 가려지는거땜에 상하비율 안맞음 */
     }
 
     #profile > div:nth-child(1) {
-      width: 3vh;
+      /* width: 3vh; */
       height: 3vh;
-      background-color: #c4c4c4;
+      display: flex;
+      justify-content: flex-end;
+      /* border: 1px solid yellowgreen; */
+    }
+    #profile > div:nth-child(1) > div{
+      height: 4vh;
+      width: 4vh;
+      /* background-color: var(--color-1); */
+    }
+    #profile > div:nth-child(1) > div:hover{
+      cursor: pointer;
     }
     #profile > div:nth-child(2) {
-      width: 50vw;
-      height: 40vh;
-      border: 1px solid blue;
-      /* position: absolute; */
+      height: 30vh;
+      /* border: 1px solid blue; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
+    #profile > div:nth-child(2) > div:nth-child(1) {
+      width: 15vh;
+      height: 15vh;
+      border-radius: 50%;
+      background-color: var(--color-3);
+    }
+    #profile > div:nth-child(2) > div:nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* border: 1px solid red; */
+    }
+    #name > div {
+      width: 15vw;
+      display: flex;
+      align-items: center;
+      /* border: 1px solid red; */
+      justify-content: space-around;
+    }
+    #name > div > div {
+      width: 2vh;
+      height: 2vh;
+      background-color: var(--color-2);
+      border-radius: 50%;
+    }
+    section {
+      /* border: 1px solid red; */
+      margin-top: 3vh;
+      position: relative;
+    }
+
+    section > div:nth-child(2) {
+      /* width: 150vw; */
+      /* border: 1px solid blue; */
+      display: flex;
+      padding: 3vw;
+      justify-content: space-between;
+      z-index: 2;
+    }
+    section > div:nth-child(2) > div {
+      width: 25vw;
+      height: 25vw;
+      background-color: var(--color-3);
+      display: flex;
+    }
+    main > div:nth-child(3) {
+      padding: 3vw;
+    }
+    main > div:nth-child(3) > div {
+      background-color: var(--color-4);
+      height: 10vh;
+    }
+    article {
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-between;
+      padding: 3vw;
+    }
+    article > div {
+      width: 27vw;
+      /* height: 10vh; */
+      border: 1px solid var(--color-1);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding: 1vw;
+      border-radius: 5px;
+    }
+    article > div:hover {
+      background-color: var(--color-4);
+      border: 1px solid var(--color-3);
+      color: white;
+      /* transition: 1s; */
+    }
+    article > div > h2 {
+      border-bottom: 1px solid var(--color-1);
+    }
+    article > div > p {
+      margin-top: 1vh;
+    }
+    .grid {
+    display: grid;
+    /* gap: 1px; */
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 3vw;
+    margin-bottom: 8vh;
+  }
+  .grid > div {
+    height: 10vh;
+    /* background-color: #c4c4c4; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid > div:nth-child(1) {
+    border-right: 1px solid var(--color-1);
+    border-bottom: 1px solid var(--color-1);
+  }
+  .grid > div:nth-child(3) {
+    border-right: 1px solid var(--color-1);
+  }
+  .grid > div:nth-child(2) {
+    border-bottom: 1px solid var(--color-1);
+  }
   </style>
 </head>
 <body>
@@ -59,7 +187,9 @@
         </div>
         <div>내 정보</div>
         <div>
-          <div></div>
+          <div>
+            <img src="css/image/cart-01.svg" alt="">
+          </div>
         </div>
       </nav>
     </header>
@@ -68,13 +198,63 @@
 
     <main>
       <div id="profile">
-        <div></div>
-        <div></div>
+        <div>
+          <div>
+            <img src="css/image/setting-01.svg" alt="">
+          </div>
+        </div>
+        <div>
+          <div>
+          </div>
+          <div id="name">
+            <h1>홍길동</h1>
+            <div>
+              <div></div>
+              <p>silver</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <!-- 프로필 끝 -->
+      <section>
+        <div class="title">
+          <h1>최근 본 상품</h1>
+          <h1>더보기</h1>
+        </div>
+        <div>
+          <div>사진</div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+
+      <div>
+        <div>
+          광고 / 이벤트
+        </div>
+      </div>
+      <article>
+        <div>
+          <h2>적립금</h2>
+          <p>1500원</p>
+        </div>
+        <div>
+          <h2>쿠폰</h2>
+          <p>3개</p>
+        </div>
+        <div>
+          <h2>작성한 후기</h2>
+          <p>1개</p>
+        </div>
+      </article>
+      <div>
+        <div class="grid">
+          <div>주문내역</div>
+          <div>문의확인</div>
+          <div>공지사항</div>
+          <div>고객센터</div>
+        </div>
+      </div>
     </main>
 
 

@@ -1,100 +1,9 @@
-*{ padding: 0; margin: 0; box-sizing: border-box; overflow-x: hidden;}
-:root {
-  --color-1:#1b4159;
-  --color-2:#142126;
-  --color-3:#d9bca3;
-  --color-4:#a68a7b;
-  --color-5:#735b58;
-}
 
 #root {
   width: 100vw;
   height: 155vh;
   display: flex;
   justify-content: center;
-}
-header {
-  width: 100vw;
-  height: 5vh;
-  border-bottom: 1px solid var(--color-1);
-  background-color: #fff;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  z-index: 2;
-}
-header > nav {
-  width: 90vw;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-}
-header > nav > div {
-  width: 15vh;
-  height: 5vh;
-  background-color: var(--color-2);
-  /* 로고 넣기 */
-}
-header > nav > ul {
-  width: 60vw;
-  height: 5vh;
-  /* border: 1px solid blue; */
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-header > nav > ul >li:nth-child(1) {
-  width: 50vw;
-  height: 5vh;
-  border: 1px solid var(--color-2);
-  border-radius: 50px;
-  display: flex;
-  overflow: hidden;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-header > nav > ul >li:nth-child(1) > div {
-  width: 5vh;
-  height: 5vh;
-  background-color: var(--color-2);
-  /* 돋보기 아이콘 넣기 */
-}
-header > nav > ul >li:nth-child(2) {
-  width: 5vh;
-  height: 5vh;
-  /* 장바구니 아이콘 이미지 넣기 */
-  background-color: var(--color-2);
-}
-header > nav > ul>li:hover {
-  cursor: pointer;
-}
-
-
-footer {
-  width: 100vw;
-  height: 7vh;
-  border-top: 1px solid var(--color-1);
-  background-color: #fff;
-  position: fixed;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-}
-footer > div {
-  /* border: 1px solid red; */
-  flex-grow: 1;
-}
-/* 아이콘 하나씩 넣어주기 */
-
-footer > div:hover {
-  background-color: var(--color-5);
-  color:white;
-  cursor: pointer;
-  /* stroke: #fff; */
-}
-footer > div > svg:hover {
-  stroke: #fff;
 }
 
 /* 여기서부터 수정하면서 만들기 */
@@ -150,14 +59,14 @@ section > p {
   color: var(--color-2);
   overflow: hidden;
 }
-p {
+h1 {
     width: 90vw;
     height: 7vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-p::after {
+h1::after {
     content: "";
     flex-grow: 1;
     /* margin: 0vw 3vw; */
