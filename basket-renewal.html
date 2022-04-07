@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/template.css">
+  <!-- <link rel="stylesheet" href="css/basket.css"> -->
+  <style>
+    #root {
+      width: 100vw;
+      /* height: 100vh; */
+      display: flex;
+      justify-content: center;
+    }
+    main {
+      width: 90vw;
+      /* height: 150vh; */
+      /* border: 1px solid black; */
+    }
+    section {
+      margin-top: 8vh;
+      height: 55vh;
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .container {
+      height: 15vh;
+      /* border: 1px solid blue; */
+      display: flex;
+      justify-content: space-between;
+    }
+    .container > div:nth-child(1) {
+    }
+    .container > div:nth-child(2) {
+      height: 15vh;
+      width: 15vh;
+      background-color:var(--color-3);
+    }
+    .container > div:nth-child(3) {
+      width: 50vw;
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    .container > div:nth-child(3) > div:nth-child(1){
+      /* border: 1px solid yellow; */
+    }
+    .container > div:nth-child(3) > div:nth-child(2){
+      /* background-color: aquamarine; */
+      display: flex;
+      justify-content: space-between;
+    }
+    input[type=number] {
+      width: 7vw;
+      align-items: center;
+      border: 1px solid var(--color-4);
+      text-align: center;
+      /* border-radius: 5px; */
+    }
+
+    input[type="checkbox"] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid var(--color-4);
+    background:white ;
+    }
+    input[type="checkbox"]:hover {
+    border-color:var(--color-5);
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: var(--color-5);
+    }
+    main > div:nth-child(2) {
+      margin-top: 8vh;
+      height: 10vh;
+      background-color: var(--color-4);
+    }
+    /* 가격정보 */
+    main > div:nth-child(3) {
+      margin-top: 3vh;
+      /* border: 1px solid #c4c4c4; */
+      display: flex;
+      flex-direction: column;
+    }
+    main > div:nth-child(3) >div:nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+      padding: 3vw;
+      color: var(--color-1);
+    }
+    main > div:nth-child(3) >div:nth-child(2) > ul:nth-child(2) {
+      text-align: end;
+    }
+
+    main > div:nth-child(4) {
+      /* height: 4vh; */
+      margin-top: 3vh;
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8vh;
+
+    }
+    main >div:nth-child(4) > div:nth-child(1) {
+      width: 30vw;
+      height: 5vh;
+      border-radius: 5px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-5);
+    }
+    main >div:nth-child(4) > div:nth-child(2) {
+      width: 55vw;
+      height: 5vh;
+      border-radius: 5px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-5);
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <nav>
+        <div>
+          <div>
+            <img src="css/image/arrow.svg" alt="">
+          </div>
+          <h1>
+            장바구니
+          </h1>
+        </div>
+        <div>
+          <div>
+            <!-- <img src="css/image/cart-01.svg" alt=""> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <section>
+        <div class="container">
+          <div>
+            <input type="checkbox" name="" id="check">
+          </div>
+          <div></div>
+          <div>
+            <div>
+              <h1>사과 조명</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </div>
+            <div>
+              <h1><input type="number" name="number_select" min="1" max="10" value="1">
+                개</h1>
+              <h1>10000원</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <input type="checkbox" name="" id="check">
+          </div>
+          <div></div>
+          <div>
+            <div>
+              <h1>포도 조명</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </div>
+            <div>
+              <h1><input type="number" name="number_select" min="1" max="10" value="1">
+                개</h1>
+              <h1>10000원</h1>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <input type="checkbox" name="" id="check">
+          </div>
+          <div></div>
+          <div>
+            <div>
+              <h1>오렌지 조명</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </div>
+            <div>
+              <h1><input type="number" name="number_select" min="1" max="10" value="1">
+                개</h1>
+              <h1>10000원</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div>광고 / 추천상품 배너</div>
+      <div>
+        <div class="title">
+          <h1>주문금액</h1>
+          <h1>42,500원</h1>
+        </div>
+        <div>
+          <ul>
+            <li>상품 금액</li>
+            <li>배송비</li>
+            <li>할인</li>
+          </ul>
+          <ul>
+            <li>50,000원</li>
+            <li>2500원</li>
+            <li>-10,000원</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>삭제</div>
+        <div>구매하기</div>
+      </div>
+    </main>
+    
+
+
+
+
+
+    <footer>
+      <div>
+        <img src="css/image/home.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/play.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/category.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/heart.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/my page.svg" alt="">
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>
