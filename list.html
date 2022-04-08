@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/category.css">
+  <style>
+    #root {
+      width: 100vw;
+      /* height: 130vh; */
+      display: flex;
+      overflow-x: hidden;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    main > div:nth-child(1) {
+      margin-top: 8vh;
+      height: 10vh;
+      width: 100vw;
+      background-color:var(--color-3);
+      /* border: 1px solid salmon; */
+    }
+    main > div:nth-child(2) {
+      width: 90vw;
+      margin-top: 3vh;
+    }
+    main > div:nth-child(2) h1 {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+  main > div:nth-child(2) h1::after {
+    content: "";
+    flex-grow: 1;
+    /* margin: 0vw 3vw; */
+    background-color:var(--color-2);
+    height: 1px;
+    margin-left: 3vw;
+    }
+    main > div:nth-child(3) {
+      margin-top: 1vh;
+      width: 100vw;
+      height: 15vh;
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-left: 10vw;
+
+    }
+    main > div:nth-child(3) > div{
+      width: 15vh;
+      height: 15vh;
+      background-color: var(--color-3);
+    }
+    main > div:nth-child(4) {
+      width: 90vw;
+      margin-top: 3vh;
+      border-bottom: 1px solid white;
+    }
+    main > div:nth-child(5) {
+      border-bottom: 1px solid white;
+      
+    }
+    main > div > .title {
+      margin-top: 3vh;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+    h1:nth-child(1) {
+      width: 25vw;
+      display: flex;
+      align-items: center;
+      /* border: 1px solid red; */
+      justify-content: space-between;
+    }
+    h1:nth-child(1) > div {
+      height: 3vh;
+      width: 3vh;
+      background-color: var(--color-3);
+    }
+    h1:nth-child(2) {
+      width: 25vw;
+      display: flex;
+      align-items: center;
+      /* border: 1px solid red; */
+      justify-content: space-between;
+    }
+    main > div:nth-child(5) {
+      ma
+    }
+    .grid {
+      margin-top: 1vh;
+    width: 90vw;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+  .grid > div {
+    height: 20vh;
+    background-color: var(--color-3);
+  }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <header>
+      <nav>
+        <div>
+          <div>
+            <img src="css/image/arrow.svg" alt="">
+          </div>
+          <h1>
+            거실조명
+          </h1>
+        </div>
+        <div>
+          <div>
+            <div><img src="css/image/search-01.svg" alt=""></div>
+          </div>
+          <div><img src="css/image/cart-01.svg" alt=""></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div></div>
+      <div>
+        <h1>인기상품</h1>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="title"></div>
+
+      <div>
+        <div class="title">
+          <h1>
+            <div></div>
+            빠른배송
+          </h1>
+          <h1>
+            <div>인기순</div>
+            <div>필터</div>
+          </h1>
+        </div>
+        <div class="grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <img src="css/image/home.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/play.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/category.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/heart.svg" alt="">
+      </div>
+      <div>
+        <img src="css/image/my page.svg" alt="">
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
