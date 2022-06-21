@@ -1,0 +1,43 @@
+*{ padding: 0; margin: 0; box-sizing: border-box; }
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  /* height: 150vh; */
+  display: flex;
+}
+#barBg{
+  position: relative;
+  z-index: 1;
+  width: 90vw;
+  height: 60vh;
+  background-color: #A68A7C;
+  top: 30vh;
+  margin-left: 10vw;
+}
+section{
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  top: 15vh;
+  overflow: scroll;
+  //부모태그에 scroll
+  &>#imgbar{
+    // border: 1px solid rgb(0, 38, 255);
+    width: 300vw;
+    display: flex;
+    flex-direction: row;
+    &>div{
+      margin-right: 10vw;
+      height: 70vh;
+      width: 60vw;
+      background-color:gray;
+    }
+    &>div:nth-child(1){
+      margin-left: 20vw;
+    }
+  }
+}
+section::-webkit-scrollbar{
+  display: none; 
+}

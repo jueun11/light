@@ -1,0 +1,161 @@
+#root {
+  width: 100vw;
+  display: flex;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &>#listAd{
+    margin-top: 10vh;
+    height: 10vh;
+    width: 100vw;
+    background-color: gray;
+  }
+  &>div:nth-child(2){
+    margin-top: 5vh;
+    width: 80vw;
+    &>div:nth-child(1){
+      border: 1px solid blue;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &>div:nth-child(1){
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        &>div:nth-child(1){
+          width: 3vh;
+          height: 3vh;
+          border: 1px solid black;
+        }
+        &>h2{
+          margin-left: 2vw;
+        }
+      }
+      &>div:nth-child(2){
+        border: 1px solid rgb(255, 35, 156);
+        display: flex;
+        &>div{
+          display: flex;
+          align-items: center;
+          margin-left: 2vw;
+          &>div{
+            width: 3vh;
+            height: 3vh;
+            background-color: gray;
+            margin-left: 1vw;
+          }
+        }
+      }
+    }
+    &>div:nth-child(2){
+      border: 1px solid blue;
+      margin-top: 2vh;
+    }
+  }
+}
+
+.grid{
+    margin-top: 1vh;
+    width: 80vw;
+    display: grid ;
+    gap: 20px;
+    row-gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+  &>div{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    &>div:nth-child(1){
+      background-color: #c4c4c4;
+      height: 25vh;
+    }
+    &>div:nth-child(2){
+      //설명
+      border: 1px solid green;
+      margin-top: 1vh;
+    }
+    &>div:nth-child(3){
+      //컬러와 가격
+      margin-top: 5vh;
+      border: 1px solid green;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      &>div:nth-child(1){
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        &>div{
+          //컬러
+          width: 3vh;
+          height: 3vh;
+          margin-right: 2vw;
+          
+        }
+      }
+      &>div:nth-child(2){
+        border: 1px solid red;
+        font-size: 1rem;
+      }
+    }
+  }
+  &>div:nth-child(1){
+    &>div:nth-child(3){
+      &>div:nth-child(1){
+        //컬러
+        &>div:nth-child(1){
+          background-color: black;
+        }
+        &>div:nth-child(2){
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+  &>div:nth-child(2){
+    &>div:nth-child(3){
+      &>div:nth-child(1){
+        //컬러
+        &>div:nth-child(1){
+          background-color: black;
+        }
+        &>div:nth-child(2){
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+  &>div:nth-child(3){
+    &>div:nth-child(3){
+      &>div:nth-child(1){
+        //컬러
+        &>div:nth-child(1){
+          background-color: black;
+        }
+        &>div:nth-child(2){
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+  &>div:nth-child(4){
+    &>div:nth-child(3){
+      &>div:nth-child(1){
+        //컬러
+        &>div:nth-child(1){
+          background-color: black;
+        }
+        &>div:nth-child(2){
+          border: 1px solid black;
+        }
+        &>div:nth-child(3){
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}

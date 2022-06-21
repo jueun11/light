@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100VW;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  width: 100vw;
+  height: 3vh;
+  position: relative;
+  top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line::before {
+  content: "";
+  flex-grow: 1;
+  /* margin: 0vw 3vw; */
+  background-color: #c4c4c4;
+  height: 1px;
+}
+
+.line::after {
+  content: "";
+  flex-grow: 1;
+  /* margin: 0vw 3vw; */
+  background-color: #c4c4c4;
+  height: 1px;
+}
+
+.line > h1 {
+  margin: 3vw;
+  font-size: 1.5rem;
+}
+
+.grid {
+  margin-top: 5vh;
+  width: 80vw;
+  display: grid;
+  gap: 20px;
+  row-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+}
+
+#mainBanner {
+  height: 80vh;
+  margin-top: 6vh;
+  border: 1px solid red;
+}
+
+#mainBest {
+  border: 1px solid red;
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainBest > .grid > div {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+#mainBest > .grid > div > div:nth-child(1) {
+  background-color: #c4c4c4;
+  height: 25vh;
+}
+#mainBest > .grid > div > div:nth-child(2) {
+  border: 1px solid green;
+  margin-top: 1vh;
+}
+#mainBest > .grid > div > div:nth-child(3) {
+  margin-top: 5vh;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#mainBest > .grid > div > div:nth-child(3) > div:nth-child(1) {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+}
+#mainBest > .grid > div > div:nth-child(3) > div:nth-child(1) > div {
+  width: 3vh;
+  height: 3vh;
+  margin-right: 2vw;
+}
+#mainBest > .grid > div > div:nth-child(3) > div:nth-child(2) {
+  border: 1px solid red;
+  font-size: 1rem;
+}
+#mainBest > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainBest > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainBest > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainBest > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainBest > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainBest > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
+  border: 1px solid black;
+}
+#mainBest > div:nth-child(3) {
+  width: 40vw;
+  border: 1px solid red;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#mainForyou {
+  border: 1px solid red;
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mainForyou > .grid > div {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+}
+#mainForyou > .grid > div > div:nth-child(1) {
+  background-color: #c4c4c4;
+  height: 25vh;
+}
+#mainForyou > .grid > div > div:nth-child(2) {
+  border: 1px solid green;
+  margin-top: 1vh;
+}
+#mainForyou > .grid > div > div:nth-child(3) {
+  margin-top: 5vh;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#mainForyou > .grid > div > div:nth-child(3) > div:nth-child(1) {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+}
+#mainForyou > .grid > div > div:nth-child(3) > div:nth-child(1) > div {
+  width: 3vh;
+  height: 3vh;
+  margin-right: 2vw;
+}
+#mainForyou > .grid > div > div:nth-child(3) > div:nth-child(2) {
+  border: 1px solid red;
+  font-size: 1rem;
+}
+#mainForyou > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainForyou > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainForyou > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainForyou > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainForyou > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainForyou > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainForyou > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
+  background-color: black;
+}
+#mainForyou > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+  border: 1px solid black;
+}
+#mainForyou > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
+  border: 1px solid black;
+}
+#mainForyou > div:nth-child(3) {
+  width: 40vw;
+  border: 1px solid red;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+#mainMagazine {
+  border: 1px solid red;
+  margin-top: 7vh;
+}
+#mainMagazine > div:nth-child(2) > div {
+  margin-top: 5vh;
+  width: 100vw;
+  background-color: gray;
+  height: 30vh;
+}
+#mainMagazine > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 3vh;
+}
+
+#mainAd {
+  border: 1px solid red;
+  margin-top: 7vh;
+  margin-bottom: 8vh;
+}
+#mainAd > div {
+  height: 7vh;
+  background-color: gray;
+}
+#mainAd > div:nth-child(2) {
+  margin-top: 3vh;
+}/*# sourceMappingURL=main2.css.map */
