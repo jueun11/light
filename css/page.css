@@ -223,7 +223,7 @@ main > #text > div:nth-child(1) > p {
   margin-top: 2vh;
 }
 main > #text > div:nth-child(2) {
-  margin-top: 5vh;
+  margin-top: 10vh;
   border: 1px solid pink;
 }
 main > #text > div:nth-child(2) > div:nth-child(2) {
