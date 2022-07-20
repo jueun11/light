@@ -31,7 +31,7 @@ main {
   content: "";
   flex-grow: 1;
   /* margin: 0vw 3vw; */
-  background-color: #c4c4c4;
+  background-color: #1B4158;
   height: 1px;
 }
 
@@ -39,7 +39,7 @@ main {
   content: "";
   flex-grow: 1;
   /* margin: 0vw 3vw; */
-  background-color: #c4c4c4;
+  background-color: #1B4158;
   height: 1px;
 }
 
@@ -62,7 +62,6 @@ main {
 #mainBanner {
   height: 80vh;
   margin-top: 6vh;
-  border: 1px solid red;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -105,7 +104,7 @@ main {
   position: absolute;
 }
 #mainBanner > div:nth-child(3) {
-  background-color: rgb(128, 128, 128);
+  background-color: rgb(116, 20, 20);
   position: absolute;
 }
 #mainBanner > div:nth-child(4) {
@@ -114,11 +113,13 @@ main {
 }
 
 #mainBest {
-  border: 1px solid red;
   margin-top: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#mainBest > div:nth-child(1) {
+  margin-bottom: 2vh;
 }
 #mainBest > .grid > div {
   display: flex;
@@ -133,18 +134,15 @@ main {
   background-size: cover;
 }
 #mainBest > .grid > div > div:nth-child(2) {
-  border: 1px solid green;
   margin-top: 1vh;
 }
 #mainBest > .grid > div > div:nth-child(3) {
   margin-top: 5vh;
-  border: 1px solid green;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 #mainBest > .grid > div > div:nth-child(3) > div:nth-child(1) {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
 }
@@ -154,7 +152,6 @@ main {
   margin-right: 2vw;
 }
 #mainBest > .grid > div > div:nth-child(3) > div:nth-child(2) {
-  border: 1px solid red;
   font-size: 1rem;
 }
 #mainBest > .grid > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
@@ -167,39 +164,43 @@ main {
   background-color: black;
 }
 #mainBest > .grid > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
-  border: 1px solid black;
+  background-color: #005A19;
 }
 #mainBest > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
   background-color: black;
+  background: #FF7917;
 }
 #mainBest > .grid > div:nth-child(3) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
-  border: 1px solid black;
+  background-color: #BC0000;
 }
 #mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
-  background-color: black;
+  background-color: #BC0000;
 }
 #mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
-  border: 1px solid black;
+  background-color: #FFD76F;
 }
 #mainBest > .grid > div:nth-child(4) > div:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
-  border: 1px solid black;
+  background-color: #DE50D8;
 }
 #mainBest > div:nth-child(3) {
   width: 40vw;
-  border: 1px solid red;
+  border: 1px solid #1B4158;
   height: 5vh;
+  color: #1B4158;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
 
 #mainForyou {
-  border: 1px solid red;
-  margin-top: 7vh;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#mainForyou > div:nth-child(1) {
+  margin-bottom: 2vh;
 }
 #mainForyou > .grid > div {
   border: 1px solid blue;

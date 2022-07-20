@@ -26,14 +26,14 @@ main{
   content: "";
   flex-grow: 1;
   /* margin: 0vw 3vw; */
-  background-color: #c4c4c4;
+  background-color: #1B4158;
   height: 1px;
 }
 .line::after {
   content: "";
   flex-grow: 1;
   /* margin: 0vw 3vw; */
-  background-color: #c4c4c4;
+  background-color: #1B4158;
   height: 1px;
 }
 .line > h1 {
@@ -54,7 +54,7 @@ main{
   height: 80vh;
   // background-color: gray;
   margin-top: 6vh;
-  border: 1px solid red;
+  // border: 1px solid red;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -98,7 +98,7 @@ main{
     position: absolute;
   }
   &>div:nth-child(3){
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(116, 20, 20);
     position: absolute;
   }
   &>div:nth-child(4){
@@ -107,15 +107,17 @@ main{
   }
 }
 #mainBest{
-  border: 1px solid red;
+  // border: 1px solid red;
   margin-top: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   &>div:nth-child(1){
-
+    // border: 1px solid red;
+    margin-bottom: 2vh;
   }
   &>.grid{
+
       &>div{
         // border: 1px solid blue;
         display: flex;
@@ -135,18 +137,18 @@ main{
         }
         &>div:nth-child(2){
           //설명
-          border: 1px solid green;
+          // border: 1px solid green;
           margin-top: 1vh;
         }
         &>div:nth-child(3){
           //컬러와 가격
           margin-top: 5vh;
-          border: 1px solid green;
+          // border: 1px solid green;
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
           &>div:nth-child(1){
-            border: 1px solid red;
+            // border: 1px solid red;
             display: flex;
             flex-direction: row;
             &>div{
@@ -158,7 +160,7 @@ main{
             }
           }
           &>div:nth-child(2){
-            border: 1px solid red;
+            // border: 1px solid red;
             font-size: 1rem;
           }
         }
@@ -184,7 +186,7 @@ main{
               background-color: black;
             }
             &>div:nth-child(2){
-              border: 1px solid black;
+              background-color: #005A19;
             }
           }
         }
@@ -195,9 +197,10 @@ main{
             //컬러
             &>div:nth-child(1){
               background-color: black;
+              background: #FF7917;
             }
             &>div:nth-child(2){
-              border: 1px solid black;
+              background-color: #BC0000;
             }
           }
         }
@@ -207,13 +210,14 @@ main{
           &>div:nth-child(1){
             //컬러
             &>div:nth-child(1){
-              background-color: black;
+              background-color: #BC0000;
+
             }
             &>div:nth-child(2){
-              border: 1px solid black;
+              background-color: #FFD76F;
             }
             &>div:nth-child(3){
-              border: 1px solid black;
+              background-color: #DE50D8;
             }
           }
         }
@@ -221,23 +225,24 @@ main{
   }
   &>div:nth-child(3){
     width: 40vw;
-    border: 1px solid red;
+    border: 1px solid #1B4158;
     height: 5vh;
+    color: #1B4158;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 10vh;
   }
 }
 
 #mainForyou{
-  border: 1px solid red;
-  margin-top: 7vh;
+  // border: 1px solid red;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   &>div:nth-child(1){
-
+    margin-bottom: 2vh;
   }
   &>.grid{
       &>div{
