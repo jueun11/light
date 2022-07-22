@@ -6,6 +6,11 @@ bestPhoto[1].style.backgroundImage = "url(/css/image/main/best/2.jpg)";
 bestPhoto[2].style.backgroundImage = "url(/css/image/main/best/3.jpg)";
 bestPhoto[3].style.backgroundImage = "url(/css/image/main/best/4.jpg)";
 
+//*foryou
+const foryouPhoto = Array.from(document.getElementsByClassName('foryouPhoto'));
+
+foryouPhoto[0].style.backgroundImage = "url(/css/image/main/foryou/1.jpg)";
+
 
 //*상단 배너 슬라이드
 
