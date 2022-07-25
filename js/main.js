@@ -10,6 +10,9 @@ bestPhoto[3].style.backgroundImage = "url(/css/image/main/best/4.jpg)";
 const foryouPhoto = Array.from(document.getElementsByClassName('foryouPhoto'));
 
 foryouPhoto[0].style.backgroundImage = "url(/css/image/main/foryou/1.jpg)";
+foryouPhoto[1].style.backgroundImage = "url(/css/image/main/foryou/2.jpg)";
+foryouPhoto[2].style.backgroundImage = "url(/css/image/main/foryou/3.jpg)";
+foryouPhoto[3].style.backgroundImage = "url(/css/image/main/foryou/4.jpg)";
 
 
 //*상단 배너 슬라이드

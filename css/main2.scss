@@ -246,11 +246,10 @@ main{
   }
   &>.grid{
       &>div{
-        border: 1px solid blue;
+        // border: 1px solid blue;
         display: flex;
         flex-direction: column;
         &>div:nth-child(1){
-          background-color: #c4c4c4;
           height: 25vh;
           display: flex;
           align-items: center;
@@ -260,18 +259,18 @@ main{
         }
         &>div:nth-child(2){
           //설명
-          border: 1px solid green;
+          // border: 1px solid green;
           margin-top: 1vh;
         }
         &>div:nth-child(3){
           //컬러와 가격
           margin-top: 5vh;
-          border: 1px solid green;
+          // border: 1px solid green;
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
           &>div:nth-child(1){
-            border: 1px solid red;
+            // border: 1px solid red;
             display: flex;
             flex-direction: row;
             &>div{
@@ -283,7 +282,7 @@ main{
             }
           }
           &>div:nth-child(2){
-            border: 1px solid red;
+            // border: 1px solid red;
             font-size: 1rem;
           }
         }
@@ -345,7 +344,7 @@ main{
   }
   &>div:nth-child(3){
     width: 40vw;
-    border: 1px solid red;
+    border: 1px solid #1B4158;
     height: 5vh;
     display: flex;
     align-items: center;
@@ -355,15 +354,15 @@ main{
 }
 
 #mainMagazine{
-  border: 1px solid red;
   margin-top: 7vh;
   &>div:nth-child(2){
     //매거진 사진
     &>div{
       margin-top: 5vh;
       width: 100vw;
-      background-color: gray;
-      height: 30vh;
+      &>img{
+        width: 100%;
+      }
     }
     &>div:nth-child(2){
       margin-top: 3vh;
@@ -371,14 +370,17 @@ main{
   }
 }
 #mainAd{
-  border: 1px solid red;
+  // border: 1px solid red;
   margin-top: 7vh;
-  margin-bottom: 8vh;
+  margin-bottom: 10vh;
   &>div{
-    height: 7vh;
-    background-color: gray;
+    &>img{
+      width: 100%;
+    }
+  }
+  &>div{
   }
   &>div:nth-child(2){
-    margin-top: 3vh;
+    margin-top: 1vh;
   }
 }
