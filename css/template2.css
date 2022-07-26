@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Abril Fatface", cursive;
+  src: url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;

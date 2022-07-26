@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @font-face {
   font-family: "GowunBatang-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff") format("woff");
@@ -223,16 +224,21 @@ main > #text {
   margin-top: 5vh;
 }
 main > #text > div:nth-child(1) > h1 {
+  color: #1b4159;
   font-size: 1.3rem;
 }
 main > #text > div:nth-child(1) > h1 > span {
   font-size: 0.8rem;
 }
 main > #text > div:nth-child(1) > p {
+  color: #1b4159;
   margin-top: 2vh;
 }
 main > #text > div:nth-child(2) {
   margin-top: 10vh;
+}
+main > #text > div:nth-child(2) > h2 {
+  color: #1b4159;
 }
 main > #text > div:nth-child(2) > div:nth-child(2) {
   height: 5vh;
@@ -265,9 +271,10 @@ main #information {
   width: 85vw;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #1b4159;
   padding-bottom: 1vh;
   flex-direction: column;
+  transition: 0.5s;
 }
 main #information > section:nth-child(1) {
   margin-top: 2vh;
@@ -276,17 +283,14 @@ main #information > section:nth-child(1) {
   justify-content: space-between;
   align-items: center;
 }
-main #information > section:nth-child(1) > #more {
-  width: 5vh;
-  height: 5vh;
-  left: 0;
-  top: 0;
-  content: "";
-  width: 2.5vh;
-  height: 2.5vh;
-  border-top: 1.5px solid #142126;
-  border-right: 1.5px solid #142126;
-  transform: rotate(135deg);
+main #information > section:nth-child(1) > h1 {
+  color: #1b4159;
+}
+main #information > section:nth-child(1) > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s;
 }
 main #information > section:nth-child(2) {
   margin-top: 2vh;
@@ -334,7 +338,9 @@ main > #photo > div:nth-child(2) > img {
   width: 100%;
 }
 main > #photo > h1 {
-  font-size: 1.3rem;
+  font-family: "Abril Fatface", cursive;
+  color: #1b4159;
+  font-size: 2rem;
   margin-top: 5vh;
   display: flex;
   justify-content: center;
