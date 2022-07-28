@@ -117,7 +117,7 @@ footer {
   flex-direction: row;
   background-color: #fff;
 }
-footer > div {
+footer > a {
   /* border: 1px solid red; */
   flex-grow: 1;
   display: flex;
@@ -125,17 +125,17 @@ footer > div {
   justify-content: center;
 }
 /* 아이콘 하나씩 넣어주기 */
-footer > div > img {
+footer > a > img {
   height: 50%;
 
 }
-footer > div:hover {
+footer > a:hover {
   /* background-color: var(--color-5); */
   background-color: var(--color-5);
   color:white;
   cursor: pointer;
 }
-footer > div > img:hover {
+footer > a > img:hover {
   color: #fff;
   stroke: #fff;
 }
