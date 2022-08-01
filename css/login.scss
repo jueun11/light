@@ -1,5 +1,19 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
+@font-face {
+  font-family: 'GowunBatang-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+h3{
+  color: #1B4158;
+}
+p{
+  color: #1B4158;
+}
 #root{
+  font-family: 'GowunBatang-Regular';
+
   width: 100vw;
   height: 100vh;
   background-color: #A68A7C;
@@ -68,14 +82,17 @@ section{
         font-size: 0.8rem;
       }
     }
-    &>div:nth-child(3){
+    &>a{
       height: 7vh;
       background-color: #735B57;
       margin-top: 5vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      text-decoration:none;
+      &>p{
+        color: #fff;
+      }
     }
     &>div:nth-child(4){
       height: 3vh;
@@ -84,7 +101,7 @@ section{
       justify-content: flex-end;
       &>p{
         font-size: 0.8rem;
-        color: #1B4158;
+        // color: #1B4158;
       }
     }
   }
@@ -120,6 +137,8 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #1B4158;;
+
 }
 .line::before {
   content: "";

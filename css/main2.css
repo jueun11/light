@@ -286,6 +286,9 @@ main {
 #mainMagazine {
   margin-top: 7vh;
 }
+#mainMagazine > div:nth-child(1) {
+  margin-bottom: 7vh;
+}
 #mainMagazine > div:nth-child(1) > h1 {
   font-family: "Abril Fatface", cursive;
   color: #1B4158;
