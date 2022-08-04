@@ -28,7 +28,7 @@ main {
         &>div:nth-child(1){
           width: 3vh;
           height: 3vh;
-          border: 1px solid black;
+          border: 1px solid #1b4159;
         }
         &>h2{
           margin-left: 2vw;
@@ -81,8 +81,8 @@ main {
     }
     &>div:nth-child(2){
       //설명
-      // border: 1px solid green;
       margin-top: 1vh;
+      color: #1b4159;
     }
     &>div:nth-child(3){
       //컬러와 가격
@@ -105,6 +105,7 @@ main {
       }
       &>div:nth-child(2){
         // border: 1px solid red;
+        color: #1b4159;
         font-size: 1rem;
       }
     }

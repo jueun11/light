@@ -98,17 +98,17 @@ header > nav > div:nth-child(2) > div {
 }
 h1 {
   font-size: 1rem;
-  color: var(--color-2);
+  color: var(--color-1);
   font-weight: bold;
 }
 h2 {
   font-size: 1rem;
-  color: var(--color-2);
+  color: var(--color-1);
 }
 
 p {
   font-size: 0.8rem;
-  color: var(--color-2);
+  color: var(--color-1);
   /* text-align: justify; */
 }
 
@@ -387,6 +387,7 @@ main{
       margin-top: 1%;
       margin-left: 2vw;
       width: 80vw;
+      color: #142126;
     }
     &>div:nth-child(2){
       width: 25vw;

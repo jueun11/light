@@ -130,30 +130,19 @@ footer {
   flex-direction: row;
   background-color: #fff;
 }
-
-footer > a {
-  /* border: 1px solid red; */
+footer > div {
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* 아이콘 하나씩 넣어주기 */
-footer > a > img {
+footer > div > img {
   height: 50%;
 }
-
-footer > a:hover {
-  /* background-color: var(--color-5); */
+footer > div:hover {
   background-color: var(--color-5);
   color: white;
   cursor: pointer;
-}
-
-footer > a > img:hover {
-  color: #fff;
-  stroke: #fff;
 }
 
 .title {

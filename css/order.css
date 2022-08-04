@@ -155,6 +155,7 @@ section > div:nth-child(2) > div:nth-child(2) > div {
   overflow: hidden;
   color: #fff;
   border: 3px solid var(--color-5);
+  font-size: 0.8rem;
 }
 section > div:nth-child(2) > div:nth-child(2) > div:hover {
   border: 3px solid var(--color-2);

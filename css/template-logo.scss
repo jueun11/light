@@ -149,29 +149,23 @@ footer {
   display: flex;
   flex-direction: row;
   background-color: #fff;
+  &>div{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &>img{
+      height: 50%;
+    }
+  }
+  &>div:hover{
+    background-color: var(--color-5);
+    color:white;
+    cursor: pointer;
+  }
 }
-footer > a {
-  /* border: 1px solid red; */
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* 아이콘 하나씩 넣어주기 */
-footer > a > img {
-  height: 50%;
 
-}
-footer > a:hover {
-  /* background-color: var(--color-5); */
-  background-color: var(--color-5);
-  color:white;
-  cursor: pointer;
-}
-footer > a > img:hover {
-  color: #fff;
-  stroke: #fff;
-}
+
 
 .title {
   height: 4vh;
